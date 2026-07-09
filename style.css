@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+header{
+    height:70px;
+}
+
+.hero{
+    height:100vh;
+}
+
+.features,
+.colors,
+.camera,
+.battery,
+.reviews,
+.pricing,
+.faq{
+    height:100vh;
+}
+
+footer{
+    height:250px;
+}
