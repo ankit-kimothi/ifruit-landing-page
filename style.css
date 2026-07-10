@@ -120,39 +120,12 @@ header {
    HERO
 =========================== */
 
-.hero .container {
-  width: 92%;
-}
-
-.hero-left {
-  padding-top: 40px;
-  padding-right: 25px;
-}
-
-.hero-left h1 {
-  font-size: 3.8rem;
-}
-
 .hero-subtitle {
   font-size: .95rem;
 }
 
 .hero-description {
   font-size: .95rem;
-}
-
-.hero-right img {
-  width: 95%;
-}
-
-.top-card {
-  top: 30px;
-  right: -5px;
-}
-
-.bottom-card {
-  bottom: 50px;
-  left: -10px;
 }
 
 .card {
@@ -165,8 +138,6 @@ header {
 
 .card p {
   font-size: 13px;
-}
-
 }
 
 .hero {
@@ -420,7 +391,7 @@ header {
    TABLET (992px)
 =========================== */
 
-@media (max-width: 992px) {
+@media (min-width:769px) and (max-width:992px){
 
   /* Navbar */
 
@@ -453,12 +424,13 @@ header {
     padding: 8px 16px;
     font-size: .9rem;
   }
+}
 
   /* ==========================
    MOBILE (768px)
 ========================== */
 
-  @media (max-width:768px) {
+@media (max-width:768px) {
 
     /* ---------- Navbar ---------- */
 
@@ -644,4 +616,152 @@ header {
       letter-spacing: 5px;
     }
 
-  }
+}
+
+  /* ==========================
+   Features
+========================== */
+
+.features{
+    padding: 120px 0;
+}
+
+.features-container{
+    width: 80%;
+    margin: auto;
+}
+
+.features-heading > span{
+    color: #32d66b;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.features-heading h2{
+    margin-top: 18px;
+    font-size: 4rem;
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.features-heading h2 span{
+    color: #7d838d;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 5%;
+}
+
+.feature-card{
+    min-height: 220px;
+    padding: 28px;
+    border-radius: 24px;
+    background: linear-gradient( 145deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+    border: 1px solid #2f3238;
+    transition: all .3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-5px);
+    border-color: #53ca7cb9;
+}
+
+.feature-icon{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid #343943;
+    color: #32d66b;
+    font-size: 1.2rem;
+    margin-bottom: 36px;
+}
+
+.feature-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.feature-card p{
+    color: #8d939d;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+/* responsiveness for Features */
+
+/* ===========================
+   Tablet (992px)
+=========================== */
+@media (min-width:769px) and (max-width:992px){
+
+.features-container{
+    width: 92%;
+}
+
+.features-heading h2{
+    font-size: 3.6rem;
+}
+
+.features-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.feature-card{
+    min-height: 240px;
+}
+}
+
+/* ===========================
+   Phone (768px)
+=========================== */
+@media (max-width:768px){
+
+.features{
+    padding: 20px 0;
+}
+
+.features-container{
+    width: 92%;
+    display: block;
+}
+
+.features-heading h2{
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.features-heading h2 span{
+    display: block;
+}
+
+.features-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.feature-card{
+    min-height: 20%;
+    padding: 24px;
+}
+
+.feature-icon{
+    margin-bottom: 28px;
+}
+
+.feature-card h3{
+    font-size: 1.5rem;
+}
+
+.feature-card p{
+    font-size: .95rem;
+}
+}
