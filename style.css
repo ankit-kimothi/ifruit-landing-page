@@ -22,15 +22,23 @@ header {
   padding: 0px 25px;
 }
 
-.navbar-container {
-  width: 80%;
-  margin: 15px auto;
-  border: 1px solid #3a3a3a;
-  border-radius: 999px;
-  background-color: #1f232b;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background: rgba(31, 35, 43, 0.65);
+main{
+  padding-top: 90px;
+}
+
+.navbar-container{
+    width: 80%;
+    margin: 15px auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 1px solid #3a3a3a;
+    border-radius: 999px;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(31,35,43,.65);
 }
 
 .nav-logo,
@@ -765,3 +773,317 @@ header {
     font-size: .95rem;
 }
 }
+
+/* ===========================
+   PHONE COLORS
+=========================== */
+.colors{
+    padding: 120px 0;
+}
+
+.colors-container{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.section-tag{
+    color:#32d66b;
+    letter-spacing:4px;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.colors-left,
+.colors-right{
+    width: 50%;
+}
+
+.colors-left h2{
+    font-size:3.8rem;
+    margin:18px 0;
+    line-height:1;
+}
+
+.colors-left > h2 > span{
+    font-size:3rem;
+    margin:10px 0;
+    line-height:1;
+    color:#9ca3af;
+}
+
+.colors-left p{
+    color:#9ca3af;
+    line-height:1.7;
+    max-width:500px;
+}
+
+.colors-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-preview{
+    width:680px;
+    height:600px;
+    background:#1e222a;
+    border:1px solid #2f3238;
+    border-radius:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.colors-right img{
+    width: 85%;
+    filter: drop-shadow(0px 0px 40px rgba(0, 255, 0, 0.1));
+    animation: float 4s ease-in-out infinite;
+}
+
+.color-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+
+    margin:35px 0 25px;
+}
+
+.color-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid #343943;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.color-btn.active{
+    transform:scale(1.12);
+    border-color:#32d66b;
+    box-shadow:0 0 0 4px rgba(50,214,107,.15);
+}
+
+.color-btn:nth-child(1){
+    background:#222;
+}
+.color-btn:nth-child(2){
+    background:#d9d9d9;
+}
+.color-btn:nth-child(3){
+    background:#3d8755;
+}
+.color-btn:nth-child(4){
+    background:#2b67c8;
+}
+.color-btn:nth-child(5){
+    background:#8c72c8;
+}
+
+.selected-color{
+    color:#ffffff;
+    font-size:1rem;
+    font-weight:800;
+}
+
+.colors-description{
+    color:#b8b8b8;
+    font-size:0.95rem;
+    font-weight:500;
+    margin-top: 15px;
+}
+
+.color-specs{
+    display:flex;
+    gap:40px;
+    margin-top:35px;
+    justify-content:flex-start;
+}
+
+.spec{
+    text-align:center;
+}
+
+.spec h3{
+    color:#32d66b;
+    font-size:1.6rem;
+}
+
+.spec p{
+    color:#8f95a1;
+    font-size:.9rem;
+}
+
+/* ===========================
+   Tablets (992px)
+=========================== */
+@media (min-width:769px) and (max-width:992px){
+
+.colors{
+    padding:90px 0;
+}
+
+.colors-container{
+    width:92%;
+    flex-direction:column;
+    gap:60px;
+}
+
+.colors-left,
+.colors-right{
+    width:100%;
+}
+
+.colors-left{
+    text-align:center;
+}
+
+.colors-left p{
+    max-width:700px;
+    margin:auto;
+}
+
+.colors-left h2{
+    font-size:3.2rem;
+}
+
+.colors-left h2 span{
+    font-size:2.6rem;
+    display:block;
+}
+
+.color-options{
+    justify-content:center;
+}
+
+.selected-color{
+    text-align:center;
+}
+
+.color-specs{
+    position:static;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.phone-preview{
+    width:520px;
+    height:560px;
+    max-width:100%;
+}
+
+.colors-right img{
+    width:75%;
+}
+
+}
+
+/* ===========================
+   Phone (768px)
+=========================== */
+@media (max-width:768px){
+
+.colors{
+    padding:70px 0;
+}
+
+.colors-container{
+    width:92%;
+    flex-direction:column;
+    gap:45px;
+}
+
+.colors-left,
+.colors-right{
+    width:100%;
+}
+
+.colors-left{
+
+    order:2;
+
+    text-align:left;
+}
+
+.colors-right{
+
+    order:1;
+}
+
+.colors-left h2{
+
+    font-size:2.7rem;
+
+    line-height:1;
+}
+
+.colors-left h2 span{
+
+    display:block;
+
+    font-size:2.2rem;
+}
+
+.colors-left p{
+
+    max-width:100%;
+}
+
+.color-options{
+
+    justify-content:flex-start;
+
+    gap:14px;
+}
+
+.color-btn{
+
+    width:46px;
+
+    height:46px;
+}
+
+.selected-color{
+
+    font-size:1.2rem;
+}
+
+.phone-preview{
+    width:100%;
+    height:360px;
+    border-radius:26px;
+}
+
+.colors-right img{
+    width:78%;
+    max-width:300px;
+}
+
+.color-specs{
+    position:static;
+    justify-content:space-around;
+    gap:0;
+    margin-top:40px;
+}
+
+.spec h3{
+
+    font-size:1.4rem;
+}
+
+.spec p{
+
+    font-size:.85rem;
+}
+}
+
+/* ===========================
+   Camera Section
+=========================== */
