@@ -1562,3 +1562,197 @@ main {
     font-size:.95rem;
 }
 }
+/* ===========================
+   PRICING
+=========================== */
+.pricing{
+    padding:120px 0;
+}
+.pricing-container{
+    display:block;
+}
+.pricing-top{
+    width:100%;
+    text-align:center;
+    margin-bottom:60px;
+}
+.pricing-top p{
+    margin:auto;
+    padding-top: 20px;
+}
+.pricing-bottom{
+    width:100%;
+}
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    justify-self: center
+}
+.pricing-note{
+    text-align:center;
+    color:#8f95a1;
+    margin-top:32px;
+}
+.pricing-card{
+    position:relative;
+    padding:66px;
+    border-radius:28px;
+    border:1px solid #2f3238;
+    background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+    transition:.3s ease;
+}
+.pricing-card:hover{
+    transform:translateY(-6px);
+}
+.featured{
+    border-color:#32d66b;
+    box-shadow:
+    0 0 70px rgba(50,214,107,.12);
+}
+.plan-name{
+    color:#8f95a1;
+    font-size:.95rem;
+}
+.pricing-card h2{
+    font-size:4rem;
+    margin:18px 0 28px;
+}
+.pricing-card hr{
+    border:none;
+    height:1px;
+    background:#2f3238;
+    margin-bottom:28px;
+}
+.pricing-features{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:40px;
+}
+.pricing-features li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#d2d5db;
+}
+.pricing-features i{
+    color:#32d66b;
+}
+.pricing-card button{
+    width:100%;
+    padding:16px;
+    border-radius:999px;
+    border:1px solid #343943;
+    background:#252932;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+.featured button{
+    background:#32d66b;
+    color:#111;
+    border:none;
+}
+.pricing-card button:hover{
+    transform:translateY(-2px);
+}
+/* ===========================
+   TABLET (992px)
+=========================== */
+@media (min-width:769px) and (max-width:992px){
+.pricing{
+    padding:90px 0;
+}
+.pricing-container{
+    width:92%;
+    margin:auto;
+}
+.pricing-top h2{
+    font-size:3.3rem;
+}
+.pricing-top h2 span{
+    display:block;
+}
+.pricing-description{
+    max-width:650px;
+}
+.pricing-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+}
+.pricing-card{
+    padding:92px;
+}
+.pricing-card h2{
+    font-size:3.5rem;
+}
+.pricing-features{
+    margin-bottom:32px;
+}
+}
+/* ===========================
+   PHONE (778px)
+=========================== */
+@media (max-width:768px){
+.pricing{
+    padding:70px 0;
+}
+.pricing-container{
+    width:92%;
+    margin:auto;
+}
+.pricing-top{
+    margin-bottom:40px;
+}
+.pricing-top h2{
+    font-size:2.8rem;
+    line-height:1;
+    padding-bottom: 20px;
+}
+.pricing-top h2 span{
+    display:block;
+}
+.pricing-description{
+    font-size:1rem;
+    max-width:100%;
+}
+.pricing-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+}
+.pricing-card{
+    padding:30px 67px;
+    border-radius:24px;
+}
+.plan-name{
+    font-size:.95rem;
+}
+.pricing-card h2{
+    font-size:3.3rem;
+    margin:18px 0 22px;
+}
+.badge{
+    top:18px;
+    right:18px;
+    padding:7px 12px;
+    font-size:.68rem;
+}
+.pricing-features{
+    gap:16px;
+    margin-bottom:30px;
+}
+.pricing-features li{
+    font-size:1rem;
+}
+.pricing-card button{
+    padding:15px;
+}
+.pricing-note{
+    margin-top:26px;
+    font-size:.95rem;
+}
+}
